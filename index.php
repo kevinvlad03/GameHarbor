@@ -13,6 +13,8 @@
     <?php include_once "Components/navbar.php" ?>
 </head>
 <body>
+    <p>GameHarbor</p>
+    <p>this is a test</p>
 <div id="cover">
     <form method="get" action="">
         <div class="tb">

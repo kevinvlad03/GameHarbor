@@ -1,11 +1,10 @@
-
-li, a, .navtbn{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+/* Nav Bar */
+li, a{
+    font-family: Aller, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
     color: #000;
     text-decoration: none;
-    background-color: dimgrey;
 }
 
 header {
@@ -15,10 +14,11 @@ header {
     padding: 30px 3%;
     background-color: dimgrey;
     color: #0088a9;
-
+    font-size: 20px;
 }
 
 .logo {
+    margin-right: 100px;
     cursor: pointer;
 }
 
@@ -51,6 +51,7 @@ ol, ul {
     border-radius:50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    font-size: 16px;
 }
 
 .navbtn:hover {

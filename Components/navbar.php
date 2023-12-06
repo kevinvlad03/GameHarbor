@@ -10,8 +10,12 @@
 
     <img class="logo" src="" alt="logo">
 
-    <ul class="nav-links">
-        <li><a href="#"><button class="navbtn">Friends</button></a></li>
-        <li><a href="#"><button class="navbtn">Profile</button></a></li>
-
+    <nav>
+        <ul class="nav-links">
+            <div class="login-register">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </div>  
+        </ul>
+    
 </header>

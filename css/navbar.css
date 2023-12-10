@@ -1,7 +1,7 @@
 /* Nav Bar */
 li, a{
-    font-family: Aller, sans-serif;
-    font-weight: lighter;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: regular;
     font-size: 18px;
     color: #000;
     text-decoration: none;
@@ -11,14 +11,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 3%;
+    padding: 20px 3%;
     background-color: dimgrey;
     color: #0088a9;
     font-size: 20px;
 }
 
 .logo {
-    margin-right: 100px;
+    margin-right: 5.5rem;
     cursor: pointer;
 }
 
@@ -51,9 +51,11 @@ ol, ul {
     border-radius:50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .navbtn:hover {
     background-color: #0088a9;
 }
+
+

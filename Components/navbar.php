@@ -8,7 +8,9 @@
         </ul>
     </nav>
 
-    <img class="logo" src="" alt="logo">
+    <a href="#" class="logo">
+        <i class="fa-solid fa-anchor"></i>
+    </a>
 
     <nav>
         <ul class="nav-links">

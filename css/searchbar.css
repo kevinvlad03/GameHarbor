@@ -1,8 +1,8 @@
 /* Search Bar */
 form{
     background-color: #eee;
-    width: 500px;
-    height: 50px;
+    width: 60rem;
+    height: 3rem;
     border-radius:50px;
     display: flex;
     justify-content: center;
@@ -20,12 +20,15 @@ input{
     width: 100%;
     height: 100%;
     padding-left: 10px;
-    font-family: Aller;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .search-bar{
     margin: 0 auto;
     margin-top: 0px;
+    padding-bottom: 70px;
     width: 100%;
     height: 0px;
     display: flex;

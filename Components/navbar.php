@@ -15,7 +15,7 @@
     <nav>
         <ul class="nav-links">
             <div class="login-register">
-                <li><a href="#">Login</a></li>
+                <li><a href="login.php">Login</a></li>
                 <li><a href="#">Register</a></li>
             </div>  
         </ul>

@@ -3,7 +3,7 @@ li, a{
     font-family: 'PT Serif', sans-serif;
     font-weight: regular;
     font-size: 18px;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 3%;
-    background-color: dimgrey;
+    background-color: rgba(0, 56, 124, 1);
     color: #0088a9;
     font-size: 20px;
 }
@@ -57,5 +57,7 @@ ol, ul {
 .navbtn:hover {
     background-color: #0088a9;
 }
+
+
 
 

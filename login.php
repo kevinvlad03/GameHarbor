@@ -7,7 +7,6 @@
     <title>Login</title>
 
     <link href="css/login.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/f5b71e78d1.js" crossorigin="anonymous"></script>
 
@@ -20,6 +19,7 @@
         <div class="card">
             <div class="content">
                 <h1>Login</h1>
+                <div class="wrapper">
                 <div class="username-input">
                     <form action="login.php" method="post">
                         <input type="text" name="username" placeholder="Username" id="username" required>
@@ -29,17 +29,19 @@
                     <input type="password" name="password" placeholder="Password" id="password" required>
                     <i class="fa fa-lock"></i>
                 </div>
+                </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox" name="remember" id="remember">
-                        Remember me
+                    <label>
+                    <input class="remember" type="checkbox" name="remember" id="remember">
+                    Remember me
                     </label>
                     <a href="#">Forgot Password?</a>
                 </div>
-            
-                <button type="submit" name="login" class="btn">Login</button>
+
+                    <button class="button" type="submit" name="login"><span>Login</span></button>
 
                 <div class="register-link">
-                    <p>Don't have an account? <a href="register.php">Register Here</a></p>
+                    <p>Don't have an account? <a href="register.php">Register</a></p>
                 </div>
                 </form>
             </div>

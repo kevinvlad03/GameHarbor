@@ -1,3 +1,4 @@
+
 <header>
 
     <nav>
@@ -12,12 +13,31 @@
         <i class="fa-solid fa-anchor"></i>
     </a>
 
-    <nav>
+    <?php
+    session_start();
+    if (isset($_SESSION["username"])) {
+    ?>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Profile</a></li>
+                <li><a href="/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    <?php
+    }
+    else {
+    ?>
+        <nav>
         <ul class="nav-links">
             <div class="login-register">
                 <li><a href="login.php">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="register.php">Register</a></li>
             </div>  
         </ul>
+        </nav>
+    <?php
+    }
+    ?>
+    
     
 </header>

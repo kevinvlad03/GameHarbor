@@ -9,12 +9,16 @@
     <link href="css/login_register.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/f5b71e78d1.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
-    <a href="index.php">Back to Home</a>
+    <div class="back-home">
+        <a href="index.php">
+        <button type="submit" name="login"><span>Back to the deck</span></button>
+        </a>
+    </div>
+    
+
     <div class="login">
         <div class="card">
             <div class="content">
@@ -24,6 +28,9 @@
                         <form action="login.php" method="post">
                             <input type="text" name="username" placeholder="Username" id="username" required>
                             <i class="fa fa-user"></i>
+                            <div class="username-error">
+                                <?php echo $username_error; ?>
+                            </div>
                     </div>
                     <div class="password-input">
                         <input type="password" name="password" placeholder="Password" id="password" required>
@@ -51,7 +58,9 @@
 
     <?php
     session_start();
-    include("db_conn.php");
+    include("connection/db_conn.php");
+
+    $password_error = $username_error = null;
 
     if (isset($_POST['username']) && isset($_POST['password'])) {
         function validate($data)
@@ -67,10 +76,10 @@
     $password = validate($_POST['password']);
 
     if (empty($username)) {
-        header("Location: login.php?error=Username is required");
+        echo $username_error = 'Username is required';
         exit();
     } else if (empty($password)) {
-        header("Location: login.php?error=Password is required");
+        echo $password_error = 'Password is required';
         exit();
     } else {
         $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
@@ -87,11 +96,11 @@
                 header("Location: index.php");
                 exit();
             } else {
-                header("Location: login.php?error=Incorrect username or password");
+                header("Location: login.php");
                 exit();
             }
         } else {
-            header("Location: login.php?error=Incorrect username or password");
+            header("Location: login.php");
             exit();
         }
     }

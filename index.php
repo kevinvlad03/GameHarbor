@@ -35,7 +35,7 @@
     <div class="box">
       <form action="" method="post">
         <input type="text" name="" placeholder="Navigate the Game Seas: Search for Your Favorite Titles">
-        <i class="fa-solid fa-gamepad"></i>
+        <i class="fa-solid fa-gamepad fa-beat" style="color:#00387C"></i>
       </form>
     </div>
   </div>
@@ -44,13 +44,29 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h3 class="mb-3">Uncover Your Next Game Expedition...</h3>
+          <div class="welcome-msg">
+            <h3>
+              <?php echo "Ahoy, " ?>
+              <?php
+              session_start();
+              if (isset($_SESSION["username"])) {
+                echo $_SESSION["username"];
+              } else {
+                echo "Sailor";
+              }
+              ?>
+              <?php echo "!" ?>
+            </h3>
+            <h3></h3>
+          </div>
         </div>
         <div class="col-5 text-right">
-          <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <a class="btn btn-light mb-3 mr-1" style="color:#00387C" href="#carouselExampleIndicators2" role="button"
+            data-slide="prev">
             <i class="fa fa-arrow-left bnt-dark"></i>
           </a>
-          <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <a class="btn btn-light mb-3 mr-1" style="color:#00387C" href="#carouselExampleIndicators2" role="button"
+            data-slide="next">
             <i class="fa fa-arrow-right"></i>
           </a>
         </div>
